@@ -7,3 +7,6 @@ git-clean:
 setup:
 	@echo "Create env file"
 	cp .env-example .env
+
+run:
+	docker-compose up -d

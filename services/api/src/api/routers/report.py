@@ -18,7 +18,7 @@ from fastapi import APIRouter, Request
 from fastapi import Response
 from fastapi.templating import Jinja2Templates
 
-from api.utils_report import generate_test_report_pdf, generate_test_report_word, generate_test_report_html
+from src.api.utils_report import generate_test_report_pdf, generate_test_report_word, generate_test_report_html
 
 templates = Jinja2Templates(directory="templates")
 

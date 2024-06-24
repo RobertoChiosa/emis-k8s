@@ -15,8 +15,14 @@ import uvicorn
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
+from src.api.db import models
+from src.api.db.database import engine
 from src.api.metadata import *
 from src.api.routers import report
+from src.api.routers import user
+
+# create the database tables
+models.Base.metadata.create_all(bind=engine)
 
 # create app instance
 app = FastAPI(
@@ -28,6 +34,7 @@ app = FastAPI(
     license_info=license_info,
     openapi_tags=openapi_tags
 )
+
 # Allow CORS for all origins
 app.add_middleware(
     CORSMiddleware,
@@ -38,6 +45,7 @@ app.add_middleware(
 )
 
 app.include_router(report.router)
+app.include_router(user.router)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0")
+    uvicorn.run(app, host="0.0.0.0", port=8001)

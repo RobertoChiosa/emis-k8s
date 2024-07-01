@@ -1,0 +1,4 @@
+id,name,definition,iri
+1,Energy,Amount of energy,http://example.com/quantities/energy
+2,Volume,Amount of volume,http://example.com/quantities/volume
+3,Volume,Amount of volume,http://example.com/quantities/volume

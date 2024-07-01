@@ -1,0 +1,4 @@
+id,name,symbol,definition,iri
+1,Kilowatt Hour,kWh,Unit of energy,http://example.com/units/kwh
+2,Liter,L,Unit of volume,http://example.com/units/liter
+3,Cubic Meter,m3,Unit of volume,http://example.com/units/cubic_meter

@@ -1,9 +1,9 @@
-title = "Polito BOS"
+title = "Building Operating System API"
 version = "0.1.0"
-terms_of_service = "https://baeda-polito.github.io/polito-bos-docs/"
+terms_of_service = "https://github.com/RobertoChiosa/building-operating-system"
 contact = {
     "name": "Roberto Chiosa",
-    "url": "https://www.polito.it/en/staff?p=roberto.chiosa",
+    "url": "https://github.com/RobertoChiosa/building-operating-system",
     "email": "roberto.chiosa@gmail.com",
 }
 
@@ -13,7 +13,10 @@ license_info = {
 }
 
 openapi_tags = [
-
+    {
+        "name": "Metadata",
+        "description": "Sensors metadata.",
+    },
     {
         "name": "Report",
         "description": "Internal reports.",
@@ -21,5 +24,5 @@ openapi_tags = [
 ]
 
 description = """
-Full stack
+Full stack Building Operating System
 """

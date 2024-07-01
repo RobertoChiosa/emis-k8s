@@ -1,0 +1,9 @@
+id,name,definition,iri
+1,Electrical Meter,Measures electrical energy,http://example.com/classes/electrical_meter
+2,Water Meter,Measures water consumption,http://example.com/classes/water_meter
+3,Gas Meter,Measures gas consumption,http://example.com/classes/gas_meter
+
+
+
+
+

@@ -1,0 +1,4 @@
+id,description,type_id,quantity_id,unit_id
+1,Electricity Meter,1,1,1
+2,Water Meter,2,2,2
+3,Gas Meter,3,3,3

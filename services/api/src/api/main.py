@@ -18,8 +18,7 @@ from starlette.middleware.cors import CORSMiddleware
 from src.api.db import models
 from src.api.db.database import engine
 from src.api.metadata import *
-from src.api.routers import report
-from src.api.routers import user
+from src.api.routers import report, metadata
 
 # create the database tables
 models.Base.metadata.create_all(bind=engine)
@@ -45,7 +44,7 @@ app.add_middleware(
 )
 
 app.include_router(report.router)
-app.include_router(user.router)
+app.include_router(metadata.router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8001)

@@ -1,32 +1,23 @@
 version: '3.8'
 services:
-  # API service
-  api:
-    # path to service's Dockerfile
-    build: ./api/
-    # ports to expose
-    ports:
-      - 8000:8000
-    # explicitly define dependency
-    depends_on:
-      - postgres
-  # database service
-  postgres:
-    # use official postgres image
-    image: postgres:latest
-    # define environment variables
-    environment:
+  db: # database service
+    container_name: db
+    image: postgres:latest # use official postgres image
+    environment: # define environment variables
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: postgres
-    # mount local directory to container
-    volumes:
+      POSTGRES_DB: monitoring
+    volumes: # mount local directory to container
       - ./postgres:/docker-entrypoint-initdb.d
-    # expose ports
-    ports:
+    ports: # expose ports
       - 5432:5432
-    # restart policy
-    restart: always
-
+    restart: always # restart policy
+  api: # API service
+    build: ./api/ # path to service's Dockerfile
+    container_name: api
+    ports:
+      - 8000:8000
+    depends_on: # explicitly define dependency
+      - db
 volumes:
   postgres-data:

@@ -14,8 +14,7 @@ class Meter(Base):
 
 class Unit(Base):
     __tablename__ = "unit"
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, primary_key=True)
     symbol = Column(String)
     definition = Column(String)
     iri = Column(String)
@@ -23,15 +22,13 @@ class Unit(Base):
 
 class Quantity(Base):
     __tablename__ = "quantity"
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, primary_key=True)
     definition = Column(String)
     iri = Column(String)
 
 
 class Class(Base):
     __tablename__ = "class"
-    id = Column(Integer, primary_key=True)
-    name = Column(String)
+    name = Column(String, primary_key=True)
     definition = Column(String)
     iri = Column(String)

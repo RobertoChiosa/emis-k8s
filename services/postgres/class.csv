@@ -1,9 +1,13 @@
-id,name,definition,iri
-1,Electrical Meter,Measures electrical energy,http://example.com/classes/electrical_meter
-2,Water Meter,Measures water consumption,http://example.com/classes/water_meter
-3,Gas Meter,Measures gas consumption,http://example.com/classes/gas_meter
-
-
-
-
-
+id,name,iri
+1,Sensor,https://brickschema.org/schema/Brick#Sensor
+2,CO2_Sensor,https://brickschema.org/schema/Brick#CO2_Sensor
+3,Differential_Pressure_Sensor,https://brickschema.org/schema/Brick#Differential_Pressure_Sensor
+4,Relative_Humidity_Sensor,https://brickschema.org/schema/Brick#Relative_Humidity_Sensor
+5,Temperature_Sensor,https://brickschema.org/schema/Brick#Temperature_Sensor
+6,Thermal_Power_Sensor,https://brickschema.org/schema/Brick#Thermal_Power_Sensor
+7,Active_Power_Sensor,https://brickschema.org/schema/Brick#Active_Power_Sensor
+8,Reactive_Power_Sensor,https://brickschema.org/schema/Brick#Reactive_Power_Sensor
+9,Solar_Radiance_Sensor,https://brickschema.org/schema/Brick#Solar_Radiance_Sensor
+10,Current_Sensor,https://brickschema.org/schema/Brick#Current_Sensor
+11,Voltage_Sensor,https://brickschema.org/schema/Brick#Voltage_Sensor
+12,Power_Factor_Sensor,https://brickschema.org/schema/Brick#Power_Factor_Sensor

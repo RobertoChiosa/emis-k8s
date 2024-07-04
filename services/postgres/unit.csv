@@ -1,4 +1,11 @@
-id,name,symbol,definition,iri
-1,Kilowatt Hour,kWh,Unit of energy,http://example.com/units/kwh
-2,Liter,L,Unit of volume,http://example.com/units/liter
-3,Cubic Meter,m3,Unit of volume,http://example.com/units/cubic_meter
+id,name,iri
+1,W,http://qudt.org/vocab/unit/W
+2,KiloW,http://qudt.org/vocab/unit/KiloW
+3,DEG_C,http://qudt.org/vocab/unit/DEG_C
+4,KiloV-A_Reactive,https://qudt.org/vocab/unit/KiloV-A_Reactive
+5,PA,http://qudt.org/vocab/unit/PA
+6,PERCENT_RH,http://qudt.org/vocab/unit/PERCENT_RH
+7,UNITLESS,http://qudt.org/vocab/unit/UNITLESS
+8,W-PER-M2,http://qudt.org/vocab/unit/W-PER-M2
+9,A,http://qudt.org/vocab/unit/A
+10,PPM,https://qudt.org/vocab/unit/PPM

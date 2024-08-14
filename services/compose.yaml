@@ -2,22 +2,38 @@ version: '3.8'
 services:
   db: # database service
     container_name: db
-    image: postgres:latest # use official postgres image
+    image: timescale/timescaledb-ha:pg16 # use official postgres image
+    restart: unless-stopped
     environment: # define environment variables
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: monitoring
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes: # mount local directory to container
       - ./postgres:/docker-entrypoint-initdb.d
     ports: # expose ports
       - 5432:5432
-    restart: always # restart policy
+  graphdb:
+    container_name: graphdb
+    image: ontotext/graphdb:10.7.2
+    restart: unless-stopped
+    environment:
+      GDB_JAVA_OPTS: >-
+        -Xmx${GRAPHDB_HEAP_SIZE} -Xms${GRAPHDB_HEAP_SIZE}
+        -Dgraphdb.home=/opt/graphdb/home
+        -Dgraphdb.workbench.importDirectory=/opt/graphdb/home/graphdb-import
+    volumes:
+      # Change folders in the .env file or directly here
+      - ${GRAPHDB_HOME}:/opt/graphdb/home
+      - ${IMPORT_FOLDER}:/opt/graphdb/home/graphdb-import
+      - ${REPOSITORY_CONFIG_FILE}:/opt/graphdb/graphdb-repo-config.ttl
   api: # API service
-    build: ./api/ # path to service's Dockerfile
     container_name: api
+    build: ./api/ # path to service's Dockerfile
+    restart: unless-stopped
     ports:
       - 8000:8000
     depends_on: # explicitly define dependency
       - db
+      - graphdb
 volumes:
   postgres-data:

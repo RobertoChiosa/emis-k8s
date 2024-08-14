@@ -1,60 +1,28 @@
--- Create table for meters
--- Create table for  units
-CREATE TABLE unit
+CREATE TABLE data
 (
-    id   INTEGER PRIMARY KEY,
-    name TEXT,
-    iri  TEXT
+    time  TIMESTAMPTZ      NOT NULL,
+    value DOUBLE PRECISION NULL,
+    uuid  VARCHAR
 );
 
--- Create table for  quantities
-CREATE TABLE quantity
-(
-    id   INTEGER PRIMARY KEY,
-    name TEXT,
-    iri  TEXT
-);
+CREATE extension if not exists timescaledb;
 
--- Create table for  classes
-CREATE TABLE class
-(
-    id   INTEGER PRIMARY KEY,
-    name TEXT,
-    iri  TEXT
-);
+SELECT create_hypertable('data', 'time',
+                         if_not_exists => TRUE,
+                         migrate_data => TRUE,
+                         create_default_indexes => TRUE,
+                         chunk_time_interval => interval '1 day');
 
-CREATE TABLE meter
-(
-    id          INTEGER PRIMARY KEY,
-    description TEXT,
-    type_id     INTEGER,
-    quantity_id INTEGER,
-    unit_id     INTEGER,
-    FOREIGN KEY (type_id) REFERENCES class (id),
-    FOREIGN KEY (quantity_id) REFERENCES quantity (id),
-    FOREIGN KEY (unit_id) REFERENCES unit (id)
-);
-
--- Populate the _unit table
-COPY unit
-    FROM '/docker-entrypoint-initdb.d/unit.csv'
-    DELIMITER ','
-    CSV HEADER;
-
--- Populate the _quantity table
-COPY quantity
-    FROM '/docker-entrypoint-initdb.d/quantity.csv'
-    DELIMITER ','
-    CSV HEADER;
-
--- Populate the _class table
-COPY class
-    FROM '/docker-entrypoint-initdb.d/class.csv'
-    DELIMITER ','
-    CSV HEADER;
+CREATE MATERIALIZED VIEW data_1h
+    WITH (timescaledb.continuous) AS
+SELECT time_bucket('1 h', time) AS bucket,
+       uuid,
+       avg(value)               AS avg_value
+FROM data srt
+GROUP BY bucket, uuid;
 
 -- Populate the meter table
-COPY meter
-    FROM '/docker-entrypoint-initdb.d/meter.csv'
+COPY data
+    FROM '/docker-entrypoint-initdb.d/import/data.csv'
     DELIMITER ','
     CSV HEADER;

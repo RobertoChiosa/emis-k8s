@@ -1,4 +1,0 @@
-id,name,iri
-1,hasPoint,https://brickschema.org/schema/Brick#hasPoint
-2,hasPart,https://brickschema.org/schema/Brick#hasPart
-3,hasQUDTReference,https://brickschema.org/schema/Brick#hasQUDTReference

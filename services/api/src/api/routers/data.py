@@ -12,15 +12,16 @@ router = APIRouter(
 
 
 @router.get(
-    path="/meters/",
-    summary="Get all meters",
+    path="/data/",
+    summary="Get data",
     tags=["Metadata"],
-    response_model=list[schemas.Meter]
+    response_model=list[schemas.Data]
 )
-def get_metadata_meters_all(db: Session = Depends(get_db)):
+def get_data(db: Session = Depends(get_db)):
     """
     Get all meters
     :param db: The database session
     :return:  All meters
     """
+
     return {}

@@ -1,5 +1,10 @@
-## 1.0.8 - yyyy-mm-d
+## v0.1.0-dev
+
+This is the very first release of the project. It is a prototype and is not intended for production use.
 
 ### Features
 
-### Fixes
+- Timescale database
+- Graph database
+- Python API
+- Frontend in vue.js

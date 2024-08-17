@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Report Header -->
+<div class="pb-3 mb-4 border-bottom">
+    <h1>{{ title }}</h1>
+    <p>{{ subtitle }}</p>
+</div>
+
+<div class="pb-3 mb-4 border-bottom">
+    <h2>{{ summary.title }}</h2>
+    <p>{{ summary.content }}</p>
+</div>
+
+<div class="pb-3 mb-4 border-bottom">
+    <h2>{{ metadata.title }}</h2>
+    <p>{{ metadata.content }}</p>
+</div>
+
+<div class="pb-3 mb-4 border-bottom">
+    <h2>{{ data.title }}</h2>
+    <p>{{ data.content }}</p>
+</div>
+
+{% endblock %}
+
+

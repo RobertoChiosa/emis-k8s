@@ -101,3 +101,4 @@
 [INFO ] 2024-08-17 12:11:11,947 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
 [INFO ] 2024-08-17 12:11:12,515 [main | c.o.f.c.s.r.GraphDBRpcServer] Started gRPC server on port 7300 successfully
 [INFO ] 2024-08-17 12:11:13,969 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2024-08-17 12:41:16,323 [Thread-3 | c.o.g.s.GraphDB] Stopping GraphDB.

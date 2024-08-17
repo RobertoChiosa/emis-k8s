@@ -7,9 +7,7 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a building operating system.
-    </h3>
+    <h3>You’ve successfully created a building operating system.</h3>
   </div>
 </template>
 

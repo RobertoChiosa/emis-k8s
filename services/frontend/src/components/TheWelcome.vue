@@ -10,7 +10,7 @@ import SupportIcon from './icons/IconSupport.vue'
 <template>
   <WelcomeItem>
     <template #icon>
-      <DocumentationIcon/>
+      <DocumentationIcon />
     </template>
     <template #heading>Timeseries Database</template>
 
@@ -20,30 +20,31 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <WelcomeItem>
     <template #icon>
-      <ToolingIcon/>
+      <ToolingIcon />
     </template>
     <template #heading>Graph Database</template>
 
-    The project uses GraphDB, a graph database, to store and query data. It is designed to store RDF data and provide
-    efficient querying capabilities.
+    The project uses GraphDB, a graph database, to store and query data. It is designed to store RDF
+    data and provide efficient querying capabilities.
 
-    <br/>
+    <br />
 
     More instructions are available in <code>README.md</code>.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <EcosystemIcon/>
+      <EcosystemIcon />
     </template>
     <template #heading>Python API</template>
 
-    The project relòies on Python FastAPI framework to provide a RESTful API for interacting with the database.
+    The project relòies on Python FastAPI framework to provide a RESTful API for interacting with
+    the database.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <CommunityIcon/>
+      <CommunityIcon />
     </template>
     <template #heading>Docker Deployment</template>
 
@@ -52,11 +53,11 @@ import SupportIcon from './icons/IconSupport.vue'
 
   <WelcomeItem>
     <template #icon>
-      <SupportIcon/>
+      <SupportIcon />
     </template>
     <template #heading>Frontend</template>
 
-    The project includes a frontend built with Vue.js and Vite. The frontend is designed to interact with the API and
-    visualize data interactively
+    The project includes a frontend built with Vue.js and Vite. The frontend is designed to interact
+    with the API and visualize data interactively
   </WelcomeItem>
 </template>

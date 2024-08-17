@@ -1,0 +1,2374 @@
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix polito: <https://graphdb.baeda.crownlabs.polito.it/POLITO#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+polito:CFOGR_GF1 a brick:Chiller ;
+    brick:hasLocation polito:I3P ;
+    brick:hasPoint polito:1037 .
+
+polito:CFOGR_GF2 a brick:Chiller ;
+    brick:hasLocation polito:I3P ;
+    brick:hasPoint polito:1016 .
+
+polito:CFOGR_GF3 a brick:Chiller ;
+    brick:hasLocation polito:I3P ;
+    brick:hasPoint polito:1039 .
+
+polito:CFOGR_GF4 a brick:Chiller ;
+    brick:hasLocation polito:I3P ;
+    brick:hasPoint polito:1038 .
+
+polito:CFOGR_GF5 a brick:Chiller ;
+    brick:hasLocation polito:I3P ;
+    brick:hasPoint polito:1250 .
+
+polito:Cabina_A a brick:Transformer_Room ;
+    brick:hasPoint polito:129,
+        polito:130 ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_B a brick:Transformer_Room ;
+    brick:hasPoint polito:1125,
+        polito:125,
+        polito:574 ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_C a brick:Transformer_Room ;
+    brick:hasPoint polito:1023,
+        polito:1024,
+        polito:1084,
+        polito:1226,
+        polito:160,
+        polito:226,
+        polito:227 ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_C1 a brick:Transformer_Room ;
+    brick:hasPoint polito:1260,
+        polito:1264,
+        polito:1266,
+        polito:1267,
+        polito:1268 ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_CARS a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_D a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_F a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_F1 a polito:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_P a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_X a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_Y a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:Cabina_Z a brick:Transformer_Room ;
+    brick:isPartOf polito:AnelloMT .
+
+polito:InfluxDB a brick:Database ;
+    rdfs:label "Time-series database" ;
+    rdfs:comment "https://influxdb.baeda.crownlabs.polito.it/" .
+
+polito:M5-021925-20240320 a brick:Meter ;
+    rdfs:label "Sede-DISMA-P2" ;
+    brick:hasPoint polito:1294,
+        polito:1295,
+        polito:1296,
+        polito:1297 .
+
+polito:M5-021926-20240320 a brick:Meter ;
+    rdfs:label "Sede-DISMA-P3" ;
+    brick:hasPoint polito:1298,
+        polito:1299,
+        polito:1300,
+        polito:1301 .
+
+polito:M5-022101-20240320 a brick:Meter ;
+    rdfs:label "Fotovoltaico 3P DISAT" ;
+    brick:hasPoint polito:1335,
+        polito:1336,
+        polito:1337 .
+
+polito:M5-022121-20240320 a brick:Meter ;
+    rdfs:label "Polito Aule R" ;
+    brick:hasPoint polito:1316,
+        polito:1317,
+        polito:1318,
+        polito:1319,
+        polito:1320,
+        polito:1321 .
+
+polito:M5-022122-20240320 a brick:Meter ;
+    rdfs:label "Polito Aule R Seminterrato" ;
+    brick:hasPoint polito:1326,
+        polito:1328,
+        polito:1329,
+        polito:1330,
+        polito:1331,
+        polito:1332,
+        polito:1334 .
+
+polito:M5-022217-20240320 a brick:Meter ;
+    rdfs:label "Polito CED Nodo 1" ;
+    brick:hasPoint polito:1339,
+        polito:1340,
+        polito:1341,
+        polito:1342,
+        polito:1343,
+        polito:1344,
+        polito:1345,
+        polito:1346,
+        polito:1347,
+        polito:1348,
+        polito:1349,
+        polito:1350,
+        polito:1351,
+        polito:1352,
+        polito:1353,
+        polito:1354,
+        polito:1355,
+        polito:1356,
+        polito:1357,
+        polito:1358,
+        polito:1359,
+        polito:1360,
+        polito:1361,
+        polito:1362,
+        polito:1363,
+        polito:1364,
+        polito:1365,
+        polito:1366,
+        polito:1367,
+        polito:1368,
+        polito:1369 .
+
+polito:M5-100005-20240320 a brick:Meter ;
+    rdfs:label "TO_CIT09_XP01_003" ;
+    brick:hasPoint polito:9001,
+        polito:9002 .
+
+polito:M5-100012-20240320 a brick:Meter ;
+    rdfs:label "Sede - DIATI - 2C" ;
+    brick:hasPoint polito:1052,
+        polito:1053,
+        polito:1054,
+        polito:1277,
+        polito:1278 .
+
+polito:M5-100013-20240320 a brick:Meter ;
+    rdfs:label "Sede - DENERG - 2E" ;
+    brick:hasPoint polito:1055,
+        polito:1056,
+        polito:1057,
+        polito:1058,
+        polito:1067,
+        polito:1068,
+        polito:1069,
+        polito:1070,
+        polito:1281 .
+
+polito:M5-100026-20240320 a brick:Meter ;
+    rdfs:label "Sede - Uta aula 1" ;
+    brick:hasPoint polito:133,
+        polito:134,
+        polito:135,
+        polito:136 .
+
+polito:M5-100045-20240320 a brick:Meter ;
+    rdfs:label "Cittadella Via Boggio" ;
+    brick:hasPoint polito:1289 .
+
+polito:M5-100063-20150828 a brick:Meter ;
+    rdfs:label "LAIB4" .
+
+polito:M5-100087-20240320 a brick:Meter ;
+    rdfs:label "Cittadella" ;
+    brick:hasPoint polito:0,
+        polito:10047,
+        polito:10048,
+        polito:10049,
+        polito:1012,
+        polito:1013,
+        polito:1014,
+        polito:1015,
+        polito:1016,
+        polito:1017,
+        polito:1018,
+        polito:1020,
+        polito:1037,
+        polito:1038,
+        polito:1039,
+        polito:1040,
+        polito:1041,
+        polito:1043,
+        polito:1050,
+        polito:1051,
+        polito:1075,
+        polito:1076,
+        polito:1077,
+        polito:1078,
+        polito:1079,
+        polito:1080,
+        polito:1081,
+        polito:1082,
+        polito:1083,
+        polito:1227,
+        polito:1228,
+        polito:1229,
+        polito:1230,
+        polito:1231,
+        polito:1250,
+        polito:1258,
+        polito:1259,
+        polito:9000 .
+
+polito:M5-100103-20240320 a brick:Meter ;
+    rdfs:label "ENERGY_CENTER" ;
+    brick:hasPoint polito:10050,
+        polito:5000,
+        polito:5001,
+        polito:5003,
+        polito:5004,
+        polito:5005,
+        polito:5006,
+        polito:5007,
+        polito:5008,
+        polito:5009,
+        polito:5010,
+        polito:5011,
+        polito:5012,
+        polito:5013,
+        polito:5014,
+        polito:5015,
+        polito:5016,
+        polito:5017 .
+
+polito:M5-100142-20240320 a brick:Meter ;
+    rdfs:label "Polito QP1 Manica D1" ;
+    brick:hasPoint polito:1291,
+        polito:1292 .
+
+polito:M5-100221-20240320 a brick:Meter ;
+    rdfs:label " POLITO Aule P" ;
+    brick:hasPoint polito:1282,
+        polito:1283,
+        polito:1284,
+        polito:1285,
+        polito:1286,
+        polito:1287,
+        polito:1288,
+        polito:1293,
+        polito:1303,
+        polito:1304,
+        polito:1305,
+        polito:1306,
+        polito:1307,
+        polito:1999 .
+
+polito:M5-100225-20240320 a brick:Meter ;
+    rdfs:label "Fotovoltaico exfucine" ;
+    brick:hasPoint polito:1026,
+        polito:1027,
+        polito:1028,
+        polito:1029,
+        polito:1030,
+        polito:1031,
+        polito:1032,
+        polito:1033,
+        polito:1034,
+        polito:1035,
+        polito:1036,
+        polito:1065,
+        polito:1066,
+        polito:1308,
+        polito:1338 .
+
+polito:M5-100241-20240320 a brick:Meter ;
+    rdfs:label "485 NORD 1" ;
+    brick:hasPoint polito:1022,
+        polito:1023,
+        polito:1024,
+        polito:1025,
+        polito:1044,
+        polito:1045,
+        polito:1046,
+        polito:1047,
+        polito:1049,
+        polito:1059,
+        polito:1060,
+        polito:1061,
+        polito:1062,
+        polito:1063,
+        polito:1064,
+        polito:1071,
+        polito:1072,
+        polito:1073,
+        polito:1074,
+        polito:1084,
+        polito:1085,
+        polito:1086,
+        polito:1226,
+        polito:1233,
+        polito:1234,
+        polito:1235,
+        polito:1236,
+        polito:1237,
+        polito:1270,
+        polito:1271,
+        polito:1272,
+        polito:1273,
+        polito:1290,
+        polito:1333,
+        polito:221,
+        polito:222,
+        polito:223,
+        polito:224,
+        polito:225,
+        polito:226,
+        polito:227,
+        polito:294,
+        polito:295,
+        polito:849,
+        polito:850,
+        polito:851,
+        polito:852,
+        polito:853 .
+
+polito:M5-100243-20240320 a brick:Meter ;
+    rdfs:label "Cab C1 e CF3" ;
+    brick:hasPoint polito:1260,
+        polito:1261,
+        polito:1262,
+        polito:1263,
+        polito:1264,
+        polito:1265,
+        polito:1266,
+        polito:1267,
+        polito:1268,
+        polito:1275,
+        polito:1276 .
+
+polito:M5-100275-20240320 a brick:Meter ;
+    rdfs:label "485 SCAVALCHI 1" ;
+    brick:hasPoint polito:1000,
+        polito:1001,
+        polito:1002,
+        polito:1242,
+        polito:1255,
+        polito:1274,
+        polito:184,
+        polito:185,
+        polito:843,
+        polito:860,
+        polito:861,
+        polito:971,
+        polito:972,
+        polito:973,
+        polito:974,
+        polito:975,
+        polito:976,
+        polito:977,
+        polito:978,
+        polito:979,
+        polito:980,
+        polito:981,
+        polito:982,
+        polito:983,
+        polito:984,
+        polito:985,
+        polito:986,
+        polito:987,
+        polito:988,
+        polito:989,
+        polito:990,
+        polito:991,
+        polito:992,
+        polito:995,
+        polito:996,
+        polito:999 .
+
+polito:M5-100280-20240320 a brick:Meter ;
+    rdfs:label "485 NORD 2" ;
+    brick:hasPoint polito:10037,
+        polito:228,
+        polito:229,
+        polito:230,
+        polito:231,
+        polito:261,
+        polito:262,
+        polito:293,
+        polito:298,
+        polito:299,
+        polito:844,
+        polito:845,
+        polito:846,
+        polito:847,
+        polito:848,
+        polito:854,
+        polito:855,
+        polito:856,
+        polito:857,
+        polito:858,
+        polito:859,
+        polito:951,
+        polito:952,
+        polito:953,
+        polito:954,
+        polito:955,
+        polito:956,
+        polito:957,
+        polito:958,
+        polito:959,
+        polito:960,
+        polito:963,
+        polito:964,
+        polito:965,
+        polito:966,
+        polito:967,
+        polito:968,
+        polito:969,
+        polito:970 .
+
+polito:M5-100281-20240320 a brick:Meter ;
+    rdfs:label "485 SUD 1" ;
+    brick:hasPoint polito:1021,
+        polito:1087,
+        polito:1088,
+        polito:1089,
+        polito:1090,
+        polito:1091,
+        polito:1092,
+        polito:1125,
+        polito:1244,
+        polito:1245,
+        polito:1246,
+        polito:1247,
+        polito:1248,
+        polito:1249,
+        polito:125,
+        polito:126,
+        polito:127,
+        polito:1279,
+        polito:128,
+        polito:1280,
+        polito:129,
+        polito:130,
+        polito:131,
+        polito:132,
+        polito:280,
+        polito:281,
+        polito:282,
+        polito:283,
+        polito:284,
+        polito:285,
+        polito:286,
+        polito:287,
+        polito:288,
+        polito:289,
+        polito:290,
+        polito:291,
+        polito:292,
+        polito:296,
+        polito:297,
+        polito:574,
+        polito:575,
+        polito:950 .
+
+polito:M5-100282-20240320 a brick:Meter ;
+    rdfs:label "Lingotto Cav Est 4P" ;
+    brick:hasPoint polito:4000,
+        polito:4001,
+        polito:4002,
+        polito:4003 .
+
+polito:M5-100378-20240320 a brick:Meter ;
+    rdfs:label "Castello Cabina" ;
+    brick:hasPoint polito:2004,
+        polito:2005,
+        polito:2006,
+        polito:2007,
+        polito:2008,
+        polito:2009,
+        polito:2010,
+        polito:2011,
+        polito:2012,
+        polito:2013,
+        polito:2014,
+        polito:2015,
+        polito:2016,
+        polito:2017 .
+
+polito:M5-100379-20240320 a brick:Meter ;
+    rdfs:label "Castello Cavedi" ;
+    brick:hasPoint polito:2003 .
+
+polito:M5-100392-20240327 a brick:Meter ;
+    rdfs:label "ASCIUGAMANI" .
+
+polito:M5-100413-20240320 a brick:Meter ;
+    rdfs:label "Nuova Cabina CARS" ;
+    brick:hasPoint polito:1309,
+        polito:1310,
+        polito:1311,
+        polito:1312,
+        polito:1313,
+        polito:1314,
+        polito:1315,
+        polito:1322,
+        polito:1323,
+        polito:1324,
+        polito:1325,
+        polito:1370,
+        polito:1371,
+        polito:1372,
+        polito:1373,
+        polito:1374,
+        polito:1375,
+        polito:1376,
+        polito:1377,
+        polito:1378,
+        polito:1379,
+        polito:1380,
+        polito:2,
+        polito:9999 .
+
+polito:M5-100416-20240327 a brick:Meter ;
+    rdfs:label "Lab. C. Codegone" ;
+    brick:hasPoint polito:10038,
+        polito:10039,
+        polito:10040,
+        polito:10041,
+        polito:10042,
+        polito:10043,
+        polito:10044,
+        polito:10045,
+        polito:10046 .
+
+polito:PV_Aule_P a brick:PV_Array ;
+    brick:hasLocation polito:Aule_P ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "50" .
+
+polito:PV_Aule_R a brick:PV_Array ;
+    brick:hasLocation polito:Aule_R ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "47" .
+
+polito:PV_Cittadella a brick:PV_Array ;
+    brick:hasLocation polito:Cittadella ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "600" .
+
+polito:PV_DIATI a brick:PV_Array ;
+    brick:hasLocation polito:DIATI ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "183" .
+
+polito:PV_EC a brick:PV_Array ;
+    brick:hasLocation polito:EC ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "47" .
+
+polito:PV_I3P_Falda_Est a brick:PV_Array ;
+    brick:hasLocation polito:I3P ;
+    brick:latitude "45.0703" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "15" .
+
+polito:PV_I3P_Falda_Ovest a brick:PV_Array ;
+    brick:hasLocation polito:I3P ;
+    brick:latitude "7.6869" ;
+    brick:longitude "7.6869" ;
+    brick:ratedPowerOutput "15" .
+
+polito:Postgres a brick:Database ;
+    rdfs:label "Timescale database" ;
+    rdfs:comment "https://postgres.baeda.crownlabs.polito.it/" .
+
+polito:Rooftop_1 a brick:Rooftop_Unit ;
+    brick:hasLocation polito:Aule_P ;
+    brick:hasPoint polito:1285 .
+
+polito:Rooftop_2 a brick:Rooftop_Unit ;
+    brick:hasLocation polito:Aule_P ;
+    brick:hasPoint polito:1286 .
+
+polito:Rooftop_3 a brick:Rooftop_Unit ;
+    brick:hasLocation polito:Aule_P ;
+    brick:hasPoint polito:1287 .
+
+polito:Rooftop_4 a brick:Rooftop_Unit ;
+    brick:hasLocation polito:Aule_P ;
+    brick:hasPoint polito:1288 .
+
+polito:Rooftop_5 a brick:Rooftop_Unit ;
+    brick:hasLocation polito:Aule_P ;
+    brick:hasPoint polito:1293 .
+
+polito:TAGLB1006963-20240326 a brick:Meter ;
+    rdfs:label "MOXA E1240-T UTA1" ;
+    brick:hasPoint polito:10017,
+        polito:10018,
+        polito:10019,
+        polito:10020,
+        polito:10021,
+        polito:10022,
+        polito:10023,
+        polito:10024 .
+
+polito:TAGLB1006974-20240326 a brick:Meter ;
+    rdfs:label "MOXA E1240-T UTA1" ;
+    brick:hasPoint polito:10025,
+        polito:10026,
+        polito:10027,
+        polito:10028,
+        polito:10029,
+        polito:10030,
+        polito:10031,
+        polito:10032 .
+
+polito:TAGLB1007301-20240326 a brick:Meter ;
+    rdfs:label "MOXA E1240-T UTA1" ;
+    brick:hasPoint polito:10001,
+        polito:10010,
+        polito:10011,
+        polito:10012,
+        polito:10013,
+        polito:10014,
+        polito:10015,
+        polito:10016 .
+
+polito:TAGLB1007357-20240326 a brick:Meter ;
+    rdfs:label "MOXA E1240-T UTA1" ;
+    brick:hasPoint polito:10002,
+        polito:10003,
+        polito:10004,
+        polito:10005,
+        polito:10006,
+        polito:10007,
+        polito:10008,
+        polito:10009 .
+
+polito:0 a brick:Temperature_Sensor ;
+    rdfs:label "0] non utilizzato" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1000 a brick:Reactive_Power_Sensor ;
+    rdfs:label "1000] R Cabina F TR1" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:10001 a brick:Temperature_Sensor ;
+    rdfs:label "10001] Tman-00" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10002 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10002] DeltaP Vent Man" ;
+    brick:hasUnit qudt:PA .
+
+polito:10003 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10003] DeltaP Vent Rip" ;
+    brick:hasUnit qudt:PA .
+
+polito:10004 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10004] DeltaP Fil Fine" ;
+    brick:hasUnit qudt:PA .
+
+polito:10005 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10005] DeltaP PreF Est" ;
+    brick:hasUnit qudt:PA .
+
+polito:10006 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10006] DeltaP PreF Ric" ;
+    brick:hasUnit qudt:PA .
+
+polito:10007 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10007] DeltaP Rip SX" ;
+    brick:hasUnit qudt:PA .
+
+polito:10008 a brick:Temperature_Sensor ;
+    rdfs:label "10008] Temp Rip SX" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10009 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10009] Delta P Man" ;
+    brick:hasUnit qudt:PA .
+
+polito:1001 a brick:Active_Power_Sensor ;
+    rdfs:label "1001] E Cabina F TR1" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10010 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10010] DeltaPRipDX-01" ;
+    brick:hasUnit qudt:PA .
+
+polito:10011 a brick:Temperature_Sensor ;
+    rdfs:label "10011] TRipDX-02" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10012 a brick:CO2_Sensor ;
+    rdfs:label "10012] CO2Rip-03" ;
+    brick:hasUnit qudt:None .
+
+polito:10013 a brick:Relative_Humidity_Sensor ;
+    rdfs:label "10013] HRiaqRip-04" ;
+    brick:hasUnit qudt:PERCENT_RH .
+
+polito:10014 a brick:Temperature_Sensor ;
+    rdfs:label "10014] TiaqRip-05" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10015 a brick:CO2_Sensor ;
+    rdfs:label "10015] CO2Man-06" ;
+    brick:hasUnit qudt:None .
+
+polito:10016 a brick:Relative_Humidity_Sensor ;
+    rdfs:label "10016] HRiapMan-07" ;
+    brick:hasUnit qudt:PERCENT_RH .
+
+polito:10017 a brick:Temperature_Sensor ;
+    rdfs:label "10017] IAQ Temp Man" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10018 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10018] DP Air ex out" ;
+    brick:hasUnit qudt:PA .
+
+polito:10019 a brick:Temperature_Sensor ;
+    rdfs:label "10019] Temp Air ex out" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1002 a brick:Reactive_Power_Sensor ;
+    rdfs:label "1002] R Cabina F TR2" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:10020 a brick:Differential_Pressure_Sensor ;
+    rdfs:label "10020] DP Air ex inp" ;
+    brick:hasUnit qudt:PA .
+
+polito:10021 a brick:Temperature_Sensor ;
+    rdfs:label "10021] Temp Air ex inp" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10022 a brick:Thermal_Power_Sensor ;
+    rdfs:label "10022] BATTERIA CALDO" ;
+    brick:hasUnit qudt:None .
+
+polito:10023 a brick:Thermal_Power_Sensor ;
+    rdfs:label "10023] BATTERIA FREDDO" ;
+    brick:hasUnit qudt:None .
+
+polito:10024 a brick:None ;
+    rdfs:label "10024] AI-07" ;
+    brick:hasUnit qudt:None .
+
+polito:10025 a brick:Relative_Humidity_Sensor ;
+    rdfs:label "10025] HR aria FF" ;
+    brick:hasUnit qudt:PERCENT_RH .
+
+polito:10026 a brick:Temperature_Sensor ;
+    rdfs:label "10026] T Aria FF" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:10027 a brick:CO2_Sensor ;
+    rdfs:label "10027] CO2Man Nuova" ;
+    brick:hasUnit qudt:None .
+
+polito:10028 a brick:CO2_Sensor ;
+    rdfs:label "10028] CO2Rip Nuova" ;
+    brick:hasUnit qudt:None .
+
+polito:10029 a brick:CO2_Sensor ;
+    rdfs:label "10029] CO2Asp Nuova" ;
+    brick:hasUnit qudt:None .
+
+polito:10030 a brick:CO2_Sensor ;
+    rdfs:label "10030] CO2Esp Nuova" ;
+    brick:hasUnit qudt:None .
+
+polito:10031 a brick:CO2_Sensor ;
+    rdfs:label "10031] CO2Amb Nuova" ;
+    brick:hasUnit qudt:None .
+
+polito:10032 a brick:None ;
+    rdfs:label "10032] AI-07" ;
+    brick:hasUnit qudt:None .
+
+polito:10037 a brick:Active_Power_Sensor ;
+    rdfs:label "10037] CED3 DET" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10038 a brick:Active_Power_Sensor ;
+    rdfs:label "10038] Uff.Castelf" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10039 a brick:Power_Factor_Sensor ;
+    rdfs:label "10039] Uff.Castelf-cosfi" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:10040 a brick:Active_Power_Sensor ;
+    rdfs:label "10040] Lab.PT" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10041 a brick:Power_Factor_Sensor ;
+    rdfs:label "10041] Lab.PT-cosfi" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:10042 a brick:Active_Power_Sensor ;
+    rdfs:label "10042] Uff.Ovidio" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10043 a brick:Power_Factor_Sensor ;
+    rdfs:label "10043] Uff.Ovidio-cosfi" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:10044 a brick:Active_Power_Sensor ;
+    rdfs:label "10044] Lab.P2" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10045 a brick:Power_Factor_Sensor ;
+    rdfs:label "10045] Lab.P2-cosfi" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:10046 a brick:Active_Power_Sensor ;
+    rdfs:label "10046] FV Codegone" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10047 a brick:Active_Power_Sensor ;
+    rdfs:label "10047] Cabina Y Trafo 2" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10048 a brick:Active_Power_Sensor ;
+    rdfs:label "10048] Cabina Y Trafo 1" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10049 a brick:Active_Power_Sensor ;
+    rdfs:label "10049] FV TOCIT09 600kW" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:10050 a brick:None ;
+    rdfs:label "10050] H2O Energy Center" ;
+    brick:hasUnit qudt:None .
+
+polito:1012 a brick:Active_Power_Sensor ;
+    rdfs:label "1012] Totale Cabina X\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1013 a brick:Active_Power_Sensor ;
+    rdfs:label "1013] Cab X TR1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1014 a brick:Active_Power_Sensor ;
+    rdfs:label "1014] Cab X TR2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1015 a brick:Active_Power_Sensor ;
+    rdfs:label "1015] Cab X TR3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1017 a brick:Active_Power_Sensor ;
+    rdfs:label "1017] Cabina Y\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1018 a brick:Active_Power_Sensor ;
+    rdfs:label "1018] Trafo2 cab Y" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1020 a brick:Active_Power_Sensor ;
+    rdfs:label "1020] Trafo Cab Z\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1021 a brick:Active_Power_Sensor ;
+    rdfs:label "1021] Cent Frigo CF1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1022 a brick:Active_Power_Sensor ;
+    rdfs:label "1022] CF2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1025 a brick:Active_Power_Sensor ;
+    rdfs:label "1025] Georis P3 Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1026 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "1026] Sol falda Est\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:1027 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "1027] Sol falda Ovest\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:1028 a brick:Temperature_Sensor ;
+    rdfs:label "1028] Temp Ambiente\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1029 a brick:Temperature_Sensor ;
+    rdfs:label "1029] Temp P falda Ovest\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1030 a brick:Active_Power_Sensor ;
+    rdfs:label "1030] Prod Inv f Est\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1031 a brick:Current_Sensor ;
+    rdfs:label "1031] A rete falda Est\r" ;
+    brick:hasUnit qudt:A .
+
+polito:1032 a brick:Current_Sensor ;
+    rdfs:label "1032] A Inv falda Est\r" ;
+    brick:hasUnit qudt:A .
+
+polito:1033 a brick:Active_Power_Sensor ;
+    rdfs:label "1033] Prod Inv falda Ove\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1034 a brick:Current_Sensor ;
+    rdfs:label "1034] A rete falda Ovest\r" ;
+    brick:hasUnit qudt:A .
+
+polito:1035 a brick:Current_Sensor ;
+    rdfs:label "1035] A Inv falda Ovest\r" ;
+    brick:hasUnit qudt:A .
+
+polito:1036 a brick:Active_Power_Sensor ;
+    rdfs:label "1036] Tot Prod Inverter\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1040 a brick:Active_Power_Sensor ;
+    rdfs:label "1040] Priv Ex Fucine\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1041 a brick:Active_Power_Sensor ;
+    rdfs:label "1041] Cont Ex Fucine\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1043 a brick:Active_Power_Sensor ;
+    rdfs:label "1043] Norm Ex Fucine\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1044 a brick:Active_Power_Sensor ;
+    rdfs:label "1044] Nodo 1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1045 a brick:Active_Power_Sensor ;
+    rdfs:label "1045] Nodo 1 GE\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1046 a brick:Active_Power_Sensor ;
+    rdfs:label "1046] Bar Ambrogio \r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1047 a brick:Active_Power_Sensor ;
+    rdfs:label "1047] Mensa Admin\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1049 a brick:Active_Power_Sensor ;
+    rdfs:label "1049] Bar Katia\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1050 a brick:Active_Power_Sensor ;
+    rdfs:label "1050] Bar Kristian\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1051 a brick:Active_Power_Sensor ;
+    rdfs:label "1051] Mensa Edisu\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1052 a brick:Active_Power_Sensor ;
+    rdfs:label "1052] DITIC P1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1053 a brick:Active_Power_Sensor ;
+    rdfs:label "1053] DITIC P2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1054 a brick:Active_Power_Sensor ;
+    rdfs:label "1054] DITIC P3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1055 a brick:Active_Power_Sensor ;
+    rdfs:label "1055] DENER P1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1056 a brick:Active_Power_Sensor ;
+    rdfs:label "1056] CF1 GF3 RcG\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1057 a brick:Active_Power_Sensor ;
+    rdfs:label "1057] DENER P2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1058 a brick:Active_Power_Sensor ;
+    rdfs:label "1058] DENER P3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1059 a brick:Active_Power_Sensor ;
+    rdfs:label "1059] DENER En Termica\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1060 a brick:None ;
+    rdfs:label "1060] DENER Volume\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1061 a brick:Temperature_Sensor ;
+    rdfs:label "1061] DENER T Mandata\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1062 a brick:Temperature_Sensor ;
+    rdfs:label "1062] DENER T Ritorno\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1063 a brick:Temperature_Sensor ;
+    rdfs:label "1063] DENER Delta T\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1064 a brick:Active_Power_Sensor ;
+    rdfs:label "1064] DENER En Termica D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1065 a brick:Active_Power_Sensor ;
+    rdfs:label "1065] En Campo FV Est\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1066 a brick:Active_Power_Sensor ;
+    rdfs:label "1066] En Campo FV Ovest\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1067 a brick:Temperature_Sensor ;
+    rdfs:label "1067] CF DENER T Mandata\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1068 a brick:Temperature_Sensor ;
+    rdfs:label "1068] CF DENER T Ritorno\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1069 a brick:None ;
+    rdfs:label "1069] CF DENER Portata\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1070 a brick:Thermal_Power_Sensor ;
+    rdfs:label "1070] CF DENER Energia T" ;
+    brick:hasUnit qudt:None .
+
+polito:1071 a brick:Active_Power_Sensor ;
+    rdfs:label "1071] CF2 GF1 McQ\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1072 a brick:Active_Power_Sensor ;
+    rdfs:label "1072] CF2 GF2 RcG\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1073 a brick:Active_Power_Sensor ;
+    rdfs:label "1073] CF2 GF3 DaiK\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1074 a brick:Active_Power_Sensor ;
+    rdfs:label "1074] CF2 ausiliari\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1075 a brick:None ;
+    rdfs:label "1075] Por. C1 Cittadella\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1076 a brick:Temperature_Sensor ;
+    rdfs:label "1076] Tman C1 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1077 a brick:Temperature_Sensor ;
+    rdfs:label "1077] Trit C1 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1078 a brick:None ;
+    rdfs:label "1078] Por. C2 Cittadella\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1079 a brick:Temperature_Sensor ;
+    rdfs:label "1079] Tman C2 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1080 a brick:Temperature_Sensor ;
+    rdfs:label "1080] Trit C2 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1081 a brick:None ;
+    rdfs:label "1081] Por. C3 Cittadella\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1082 a brick:Temperature_Sensor ;
+    rdfs:label "1082] Tman C3 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1083 a brick:Temperature_Sensor ;
+    rdfs:label "1083] Trit C3 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1085 a brick:Active_Power_Sensor ;
+    rdfs:label "1085] Continuita GR3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1086 a brick:Active_Power_Sensor ;
+    rdfs:label "1086] Centro Stampa\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1087 a brick:Active_Power_Sensor ;
+    rdfs:label "1087] Fabbricato S1B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1088 a brick:Active_Power_Sensor ;
+    rdfs:label "1088] Energetica S2A PT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1089 a brick:Active_Power_Sensor ;
+    rdfs:label "1089] Sopra_elev S1B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1090 a brick:Active_Power_Sensor ;
+    rdfs:label "1090] Q90\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1091 a brick:Active_Power_Sensor ;
+    rdfs:label "1091] Q12\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1092 a brick:Active_Power_Sensor ;
+    rdfs:label "1092] Fabbricato S1B En-\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1227 a brick:None ;
+    rdfs:label "1227] Por. C4 Cittadella\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1228 a brick:Temperature_Sensor ;
+    rdfs:label "1228] Tman C4 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1229 a brick:Temperature_Sensor ;
+    rdfs:label "1229] Trit C4 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1230 a brick:None ;
+    rdfs:label "1230] Por. C5 Cittadella\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1231 a brick:Temperature_Sensor ;
+    rdfs:label "1231] Tman C5 Cittadella\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1233 a brick:None ;
+    rdfs:label "1233] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1234 a brick:None ;
+    rdfs:label "1234] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1235 a brick:None ;
+    rdfs:label "1235] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1236 a brick:None ;
+    rdfs:label "1236] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1237 a brick:None ;
+    rdfs:label "1237] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1242 a brick:Active_Power_Sensor ;
+    rdfs:label "1242] Corridoio P3 DAUIN" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1244 a brick:Active_Power_Sensor ;
+    rdfs:label "1244] Cabinet AVL +\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1245 a brick:Active_Power_Sensor ;
+    rdfs:label "1245] Cabinet AVL -\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1246 a brick:Active_Power_Sensor ;
+    rdfs:label "1246] Totale Laborat +\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1247 a brick:Active_Power_Sensor ;
+    rdfs:label "1247] Totale Laborat -\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1248 a brick:Active_Power_Sensor ;
+    rdfs:label "1248] Fev +\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1249 a brick:Active_Power_Sensor ;
+    rdfs:label "1249] Fev -\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1255 a brick:Active_Power_Sensor ;
+    rdfs:label "1255] Corr P3 DAUIN esi" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1258 a brick:Active_Power_Sensor ;
+    rdfs:label "1258] TBPAC\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1259 a brick:Active_Power_Sensor ;
+    rdfs:label "1259] CDZ TBPAC\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:126 a brick:Active_Power_Sensor ;
+    rdfs:label "126] Strutturale 2M\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1261 a brick:Active_Power_Sensor ;
+    rdfs:label "1261] Cent CF3 Frigo 1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1262 a brick:Active_Power_Sensor ;
+    rdfs:label "1262] Cent CF3 Frigo 2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1263 a brick:Active_Power_Sensor ;
+    rdfs:label "1263] Cent CF3 Frigo 3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1265 a brick:Active_Power_Sensor ;
+    rdfs:label "1265] Gen Centrale Frigo\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:127 a brick:Active_Power_Sensor ;
+    rdfs:label "127] Idraulica S2B_C_G_H\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1270 a brick:Active_Power_Sensor ;
+    rdfs:label "1270] Corr.Elettrici L_1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1271 a brick:Active_Power_Sensor ;
+    rdfs:label "1271] Corr.Elettrici L_2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1272 a brick:Active_Power_Sensor ;
+    rdfs:label "1272] Corr.Elettrici L_3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1273 a brick:Active_Power_Sensor ;
+    rdfs:label "1273] Corr.Elettrici L_4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1274 a brick:Active_Power_Sensor ;
+    rdfs:label "1274] Cabina F" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1275 a brick:None ;
+    rdfs:label "1275] H2O Font TO_CEN04\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1276 a brick:Active_Power_Sensor ;
+    rdfs:label "1276] EE Font TO_CEN04\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1277 a brick:None ;
+    rdfs:label "1277] H2O Font TO_CEN02\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1278 a brick:Active_Power_Sensor ;
+    rdfs:label "1278] EE Font TO_CEN02\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1279 a brick:None ;
+    rdfs:label "1279] H2O Font TO_CEN01\r" ;
+    brick:hasUnit qudt:None .
+
+polito:128 a brick:Active_Power_Sensor ;
+    rdfs:label "128] Energetica S2E\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1280 a brick:Active_Power_Sensor ;
+    rdfs:label "1280] EE Font TO_CEN01\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1281 a brick:None ;
+    rdfs:label "1281] H2O F. TO_CEN01\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1282 a brick:None ;
+    rdfs:label "1282] Font Aule P H2O\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1283 a brick:Active_Power_Sensor ;
+    rdfs:label "1283] Gen QE-GA\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1284 a brick:Active_Power_Sensor ;
+    rdfs:label "1284] Gen QE-CDZ\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1289 a brick:None ;
+    rdfs:label "1289] Font ViaBoggio H20\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1290 a brick:None ;
+    rdfs:label "1290] Font. H2O TO-CEN03\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1291 a brick:None ;
+    rdfs:label "1291] Font Manica D1 H2O\r" ;
+    brick:hasUnit qudt:None .
+
+polito:1292 a brick:Active_Power_Sensor ;
+    rdfs:label "1292] Font Manica D1 EE\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1294 a brick:Active_Power_Sensor ;
+    rdfs:label "1294] QP2 Generale\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1295 a brick:Active_Power_Sensor ;
+    rdfs:label "1295] QP2 Sez. FM\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1296 a brick:Active_Power_Sensor ;
+    rdfs:label "1296] QP2 Sez. Speciali\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1297 a brick:Active_Power_Sensor ;
+    rdfs:label "1297] QP2 Sez. Luci\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1298 a brick:Active_Power_Sensor ;
+    rdfs:label "1298] QP3 Generale\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1299 a brick:Active_Power_Sensor ;
+    rdfs:label "1299] QP3 Sez. FM\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1300 a brick:Active_Power_Sensor ;
+    rdfs:label "1300] QP3 Sez. Speciali\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1301 a brick:Active_Power_Sensor ;
+    rdfs:label "1301] QP3 Sez. Luci\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1303 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "1303] Solarimatro Aule P\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:1304 a brick:Temperature_Sensor ;
+    rdfs:label "1304] T. Celle FV Aule P\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1305 a brick:Active_Power_Sensor ;
+    rdfs:label "1305] Prod Inv 1 Aule P\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1306 a brick:Active_Power_Sensor ;
+    rdfs:label "1306] Prod Inv 2 Aule P\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1307 a brick:Active_Power_Sensor ;
+    rdfs:label "1307] Prod TOT FV Aule P\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1308 a brick:Active_Power_Sensor ;
+    rdfs:label "1308] Produzione impiant\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1309 a brick:Active_Power_Sensor ;
+    rdfs:label "1309] Gen BT Trafo 2 CAR" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:131 a brick:Active_Power_Sensor ;
+    rdfs:label "131] Aero S1A PS_T\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1310 a brick:Active_Power_Sensor ;
+    rdfs:label "1310] Gen BT Trafo 3 CAR" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1311 a brick:Active_Power_Sensor ;
+    rdfs:label "1311] Cabina A1" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1312 a brick:Power_Factor_Sensor ;
+    rdfs:label "1312] Gen BT Trafo 1" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1313 a brick:Power_Factor_Sensor ;
+    rdfs:label "1313] Gen BT Trafo 2" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1314 a brick:Power_Factor_Sensor ;
+    rdfs:label "1314] Gen BT Trafo 3" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1315 a brick:Active_Power_Sensor ;
+    rdfs:label "1315] Geb BT Trafo 1 CAR" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1316 a brick:Active_Power_Sensor ;
+    rdfs:label "1316] Gen Luci Aula R\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1317 a brick:Power_Factor_Sensor ;
+    rdfs:label "1317] Gen Luci Aula R\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1318 a brick:Active_Power_Sensor ;
+    rdfs:label "1318] Gen FM Aula R\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1319 a brick:Power_Factor_Sensor ;
+    rdfs:label "1319] Gen FM Aula R\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:132 a brick:Active_Power_Sensor ;
+    rdfs:label "132] Sist Produzione\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1320 a brick:Active_Power_Sensor ;
+    rdfs:label "1320] Serv. Vari Aula R\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1321 a brick:Power_Factor_Sensor ;
+    rdfs:label "1321] Serv. Vari Aula R\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1322 a brick:Active_Power_Sensor ;
+    rdfs:label "1322] Quadro QEG" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1323 a brick:Active_Power_Sensor ;
+    rdfs:label "1323] QD_400" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1324 a brick:Active_Power_Sensor ;
+    rdfs:label "1324] GF CARS" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1325 a brick:Active_Power_Sensor ;
+    rdfs:label "1325] Blindo FEV" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1326 a brick:Active_Power_Sensor ;
+    rdfs:label "1326] Gen UTA Aule R" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1328 a brick:Power_Factor_Sensor ;
+    rdfs:label "1328] Gen UTA Aule R cos\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1329 a brick:Active_Power_Sensor ;
+    rdfs:label "1329] Gen Aule R Privile\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:133 a brick:Active_Power_Sensor ;
+    rdfs:label "133] UTA1 VM" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1330 a brick:Power_Factor_Sensor ;
+    rdfs:label "1330] Gen Aule R Pribile\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1331 a brick:Active_Power_Sensor ;
+    rdfs:label "1331] Gen Aule R Nomale\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1332 a brick:Power_Factor_Sensor ;
+    rdfs:label "1332] Gen Aule R Normale\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1333 a brick:None ;
+    rdfs:label "1333] XXX" ;
+    brick:hasUnit qudt:None .
+
+polito:1334 a brick:Active_Power_Sensor ;
+    rdfs:label "1334] Prod FV Aule R\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1335 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "1335] Sol. FV DISAT 3P\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:1336 a brick:Temperature_Sensor ;
+    rdfs:label "1336] Temp FV DISAT 3P\r" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:1337 a brick:Active_Power_Sensor ;
+    rdfs:label "1337] Prod FV DISAT 3P\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1338 a brick:Active_Power_Sensor ;
+    rdfs:label "1338] QUADRO VISHAY\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1339 a brick:Active_Power_Sensor ;
+    rdfs:label "1339] QE-DC-SERV GEN\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:134 a brick:Active_Power_Sensor ;
+    rdfs:label "134] UTA1 VR" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1340 a brick:Power_Factor_Sensor ;
+    rdfs:label "1340] QE-DC-SERV GEN\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1341 a brick:Active_Power_Sensor ;
+    rdfs:label "1341] QE-C-IS-AIT GEN\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1342 a brick:Power_Factor_Sensor ;
+    rdfs:label "1342] QE-C-IS-AIT GEN\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1343 a brick:Active_Power_Sensor ;
+    rdfs:label "1343] QE-C-IS-AIT PDI\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1344 a brick:Power_Factor_Sensor ;
+    rdfs:label "1344] QE-C-IS-AIT PDI\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1345 a brick:Active_Power_Sensor ;
+    rdfs:label "1345] QE-C-IS-AIT VENT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1346 a brick:Power_Factor_Sensor ;
+    rdfs:label "1346] QE-C-IS-AIT VENT\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1347 a brick:Active_Power_Sensor ;
+    rdfs:label "1347] QE-P-IS-AIT GEN\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1348 a brick:Power_Factor_Sensor ;
+    rdfs:label "1348] QE-P-IS-AIT GEN\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1349 a brick:Active_Power_Sensor ;
+    rdfs:label "1349] QE-P-IS-AIT PDI\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:135 a brick:Active_Power_Sensor ;
+    rdfs:label "135] UTA3 VM" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1350 a brick:Power_Factor_Sensor ;
+    rdfs:label "1350] QE-P-IS-AIT PDI\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1351 a brick:Active_Power_Sensor ;
+    rdfs:label "1351] QE-P-IS-AIT VENT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1352 a brick:Power_Factor_Sensor ;
+    rdfs:label "1352] QE-P-IS-AIT VENT\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1353 a brick:Active_Power_Sensor ;
+    rdfs:label "1353] QE-C-IS-SMART GEN\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1354 a brick:Power_Factor_Sensor ;
+    rdfs:label "1354] QE-C-IS-SMART GEN\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1355 a brick:Active_Power_Sensor ;
+    rdfs:label "1355] QE-C-IS-SMART PDI\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1356 a brick:Power_Factor_Sensor ;
+    rdfs:label "1356] QE-C-IS-SMART PDI\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1357 a brick:Active_Power_Sensor ;
+    rdfs:label "1357] QE-C-IS-SMART VENT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1358 a brick:Power_Factor_Sensor ;
+    rdfs:label "1358] QE-C-IS-SMART VENT\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1359 a brick:Active_Power_Sensor ;
+    rdfs:label "1359] QE-N-IS-SMART GEN\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:136 a brick:Active_Power_Sensor ;
+    rdfs:label "136] UTA3 VR" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1360 a brick:Power_Factor_Sensor ;
+    rdfs:label "1360] QE-N-IS-SMART GEN\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1361 a brick:Active_Power_Sensor ;
+    rdfs:label "1361] QE-N-IS-SMART PDI\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1362 a brick:Power_Factor_Sensor ;
+    rdfs:label "1362] QE-N-IS-SMART PDI\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1363 a brick:Active_Power_Sensor ;
+    rdfs:label "1363] QE-N-IS-SMART VENT" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1364 a brick:Power_Factor_Sensor ;
+    rdfs:label "1364] QE-N-IS-SMART VENT\r" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1365 a brick:Active_Power_Sensor ;
+    rdfs:label "1365] SQ-B VENTILAZ. DC1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1366 a brick:Active_Power_Sensor ;
+    rdfs:label "1366] SQ-B VENTILAZ. DC2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1367 a brick:Active_Power_Sensor ;
+    rdfs:label "1367] GF NODO 1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1368 a brick:Active_Power_Sensor ;
+    rdfs:label "1368] SOTTO QUADRO A\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1369 a brick:Active_Power_Sensor ;
+    rdfs:label "1369] SOTTO QUADRO B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1370 a brick:Active_Power_Sensor ;
+    rdfs:label "1370] QWD CARS" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1371 a brick:Active_Power_Sensor ;
+    rdfs:label "1371] CABINET" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1372 a brick:Active_Power_Sensor ;
+    rdfs:label "1372] CELLE SILENZIATE" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1373 a brick:Active_Power_Sensor ;
+    rdfs:label "1373] CARS 1.8.0" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1374 a brick:Active_Power_Sensor ;
+    rdfs:label "1374] CARS 2.8.0" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1375 a brick:Current_Sensor ;
+    rdfs:label "1375] QWD CARS AMP L1" ;
+    brick:hasUnit qudt:A .
+
+polito:1376 a brick:Current_Sensor ;
+    rdfs:label "1376] QWD CARS AMP L2" ;
+    brick:hasUnit qudt:A .
+
+polito:1377 a brick:Current_Sensor ;
+    rdfs:label "1377] QWD CARS AMP L3" ;
+    brick:hasUnit qudt:A .
+
+polito:1378 a brick:Power_Factor_Sensor ;
+    rdfs:label "1378] QWD CARS COSFI" ;
+    brick:hasUnit qudt:UNITLESS .
+
+polito:1379 a brick:None ;
+    rdfs:label "1379] QWD CARS TOTALIZZA" ;
+    brick:hasUnit qudt:None .
+
+polito:1380 a brick:Active_Power_Sensor ;
+    rdfs:label "1380] QWD CARS En" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:184 a brick:Active_Power_Sensor ;
+    rdfs:label "184] Attiva Cabina C.T." ;
+    brick:hasUnit qudt:KiloW .
+
+polito:185 a brick:Reactive_Power_Sensor ;
+    rdfs:label "185] Reattiva Cabina C.T" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:1999 a brick:Active_Power_Sensor ;
+    rdfs:label "1999] Aula 1P (kWh)" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2 a brick:Active_Power_Sensor ;
+    rdfs:label "2]  non utilizzato" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2003 a brick:None ;
+    rdfs:label "2003] Metano\r" ;
+    brick:hasUnit qudt:None .
+
+polito:2004 a brick:Active_Power_Sensor ;
+    rdfs:label "2004] Cabina Castello\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2005 a brick:Active_Power_Sensor ;
+    rdfs:label "2005] Gen TR1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2006 a brick:Active_Power_Sensor ;
+    rdfs:label "2006] Gen TR2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2007 a brick:Active_Power_Sensor ;
+    rdfs:label "2007] QGBT Privilegiata\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2008 a brick:Active_Power_Sensor ;
+    rdfs:label "2008] QE Frigo Esistente\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2009 a brick:Active_Power_Sensor ;
+    rdfs:label "2009] QE Frigo Nuova Cen\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2010 a brick:Active_Power_Sensor ;
+    rdfs:label "2010] QGBT Portineria\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2011 a brick:Active_Power_Sensor ;
+    rdfs:label "2011] QE Archivio\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2012 a brick:Active_Power_Sensor ;
+    rdfs:label "2012] QGBT-F Bassi Fabbr\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2013 a brick:Active_Power_Sensor ;
+    rdfs:label "2013] Nuova Ala 1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2014 a brick:Active_Power_Sensor ;
+    rdfs:label "2014] Nuova Ala 2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2015 a brick:Active_Power_Sensor ;
+    rdfs:label "2015] Centrale Termica\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2016 a brick:Active_Power_Sensor ;
+    rdfs:label "2016] Gen Rete Normale\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:2017 a brick:Active_Power_Sensor ;
+    rdfs:label "2017] UPS 50kWA\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:221 a brick:None ;
+    rdfs:label "221] Acqua Potabile\r" ;
+    brick:hasUnit qudt:None .
+
+polito:222 a brick:Active_Power_Sensor ;
+    rdfs:label "222] Attiva Bollitori Me" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:223 a brick:Active_Power_Sensor ;
+    rdfs:label "223] Attiva PompaCalore1" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:224 a brick:Active_Power_Sensor ;
+    rdfs:label "224] Attiva PompaCalore\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:225 a brick:Active_Power_Sensor ;
+    rdfs:label "225] Ausiliari PC" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:228 a brick:Active_Power_Sensor ;
+    rdfs:label "228] Cab D Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:229 a brick:Reactive_Power_Sensor ;
+    rdfs:label "229] Cab D Reattiva\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:230 a brick:Active_Power_Sensor ;
+    rdfs:label "230] Enertronica\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:231 a brick:Reactive_Power_Sensor ;
+    rdfs:label "231] Enertronica Reatt\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:261 a brick:Active_Power_Sensor ;
+    rdfs:label "261] SQ.QP2 ELT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:262 a brick:Active_Power_Sensor ;
+    rdfs:label "262] SQ.QP3 AU\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:280 a brick:Active_Power_Sensor ;
+    rdfs:label "280] Strutturale 2I\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:281 a brick:Active_Power_Sensor ;
+    rdfs:label "281] Meccanica S1E P4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:282 a brick:Active_Power_Sensor ;
+    rdfs:label "282] Energetica S1E P1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:283 a brick:Active_Power_Sensor ;
+    rdfs:label "283] Sist_Prod S1E P2_3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:284 a brick:Active_Power_Sensor ;
+    rdfs:label "284] Lab_Motor S1E PS\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:285 a brick:Active_Power_Sensor ;
+    rdfs:label "285] Meccanica S1D P3_4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:286 a brick:Active_Power_Sensor ;
+    rdfs:label "286] Aero S1D P1_2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:287 a brick:Active_Power_Sensor ;
+    rdfs:label "287] Aero S1D PS\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:288 a brick:Active_Power_Sensor ;
+    rdfs:label "288] Aero S1D PT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:289 a brick:Active_Power_Sensor ;
+    rdfs:label "289] Sist_Prod S1B Q3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:290 a brick:Active_Power_Sensor ;
+    rdfs:label "290] Meccanica S1B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:291 a brick:Active_Power_Sensor ;
+    rdfs:label "291] Energetica S1B PS_T\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:292 a brick:Active_Power_Sensor ;
+    rdfs:label "292] Sist_Prod S1B Q8_11\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:293 a brick:Active_Power_Sensor ;
+    rdfs:label "293] Fisica Lab-Uff-F3B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:294 a brick:Active_Power_Sensor ;
+    rdfs:label "294] Matematica Uff-P3-4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:295 a brick:Active_Power_Sensor ;
+    rdfs:label "295] Edilizia Lab1-2 uff\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:296 a brick:Active_Power_Sensor ;
+    rdfs:label "296] Attiva Motore GV\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:297 a brick:Reactive_Power_Sensor ;
+    rdfs:label "297] Reattiva Motore GV\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:298 a brick:Active_Power_Sensor ;
+    rdfs:label "298] Cab E Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:299 a brick:Reactive_Power_Sensor ;
+    rdfs:label "299] Cab E Reattiva\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:4000 a brick:Active_Power_Sensor ;
+    rdfs:label "4000] Attiva Cav. Est\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:4001 a brick:Reactive_Power_Sensor ;
+    rdfs:label "4001] Reattiva Cav. Est\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:4002 a brick:Active_Power_Sensor ;
+    rdfs:label "4002] Attiva Cav. Ovest\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:4003 a brick:Reactive_Power_Sensor ;
+    rdfs:label "4003] Reattiva Cav. Oves\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:5000 a brick:Active_Power_Sensor ;
+    rdfs:label "5000] Attiva Prelevata\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5001 a brick:Reactive_Power_Sensor ;
+    rdfs:label "5001] Reattiva Prelevata\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:5003 a brick:Active_Power_Sensor ;
+    rdfs:label "5003] Attiva Ceduta\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5004 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "5004] Solarim 5gradi\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:5005 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "5005] Solarim 80gradi\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:5006 a brick:Active_Power_Sensor ;
+    rdfs:label "5006] Inv 1 Prod\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5007 a brick:Active_Power_Sensor ;
+    rdfs:label "5007] Inv 2 Prod\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5008 a brick:Active_Power_Sensor ;
+    rdfs:label "5008] Inv 3 Prod\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5009 a brick:Active_Power_Sensor ;
+    rdfs:label "5009] Inv 4 Prod\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5010 a brick:Temperature_Sensor ;
+    rdfs:label "5010] Temp Pannelli" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:5011 a brick:Active_Power_Sensor ;
+    rdfs:label "5011] Produzione FV\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5012 a brick:None ;
+    rdfs:label "5012] Totalizzatore FV\r" ;
+    brick:hasUnit qudt:None .
+
+polito:5013 a brick:Active_Power_Sensor ;
+    rdfs:label "5013] Generale CT\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5014 a brick:Active_Power_Sensor ;
+    rdfs:label "5014] Gruppo Frigo + PC\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5015 a brick:Active_Power_Sensor ;
+    rdfs:label "5015] Assorbitore\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5016 a brick:Active_Power_Sensor ;
+    rdfs:label "5016] Gen Centr. Distr.\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:5017 a brick:Active_Power_Sensor ;
+    rdfs:label "5017] Torrette Auto" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:575 a brick:Active_Power_Sensor ;
+    rdfs:label "575] Strutturale LAQ geo\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:843 a brick:Active_Power_Sensor ;
+    rdfs:label "843] Ex Cabina Elettrica" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:844 a brick:Active_Power_Sensor ;
+    rdfs:label "844] Geo FS4B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:845 a brick:Active_Power_Sensor ;
+    rdfs:label "845] Geo + Chim FS4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:846 a brick:Active_Power_Sensor ;
+    rdfs:label "846] Chm FS4F\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:847 a brick:Active_Power_Sensor ;
+    rdfs:label "847] Chim FS4G\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:848 a brick:Active_Power_Sensor ;
+    rdfs:label "848] Elettronica FS4I\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:849 a brick:Active_Power_Sensor ;
+    rdfs:label "849] Georis PS Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:850 a brick:Active_Power_Sensor ;
+    rdfs:label "850] Georis PT Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:851 a brick:Active_Power_Sensor ;
+    rdfs:label "851] Chimica P1 Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:852 a brick:Active_Power_Sensor ;
+    rdfs:label "852] Chimica P2 Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:853 a brick:Active_Power_Sensor ;
+    rdfs:label "853] Georis P3 Fab S4D\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:854 a brick:Active_Power_Sensor ;
+    rdfs:label "854] IstEl - PS FSL4 SM4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:855 a brick:Active_Power_Sensor ;
+    rdfs:label "855] IstEl - TP FS4L S4M\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:856 a brick:Active_Power_Sensor ;
+    rdfs:label "856] Elettronica P1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:857 a brick:Active_Power_Sensor ;
+    rdfs:label "857] Elett Elettronic P2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:858 a brick:Active_Power_Sensor ;
+    rdfs:label "858] Autom Inform P3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:859 a brick:Active_Power_Sensor ;
+    rdfs:label "859] Elett CESPA P4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:860 a brick:Active_Power_Sensor ;
+    rdfs:label "860] Attiva GME" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:861 a brick:Reactive_Power_Sensor ;
+    rdfs:label "861] Reattiva GME" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:9000 a brick:Active_Power_Sensor ;
+    rdfs:label "9000] Prod FV Cittadella" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:9001 a brick:Solar_Radiance_Sensor ;
+    rdfs:label "9001] Solarimetro FV cit\r" ;
+    brick:hasUnit qudt:W-PER-M2 .
+
+polito:9002 a brick:Temperature_Sensor ;
+    rdfs:label "9002] Temp Pannelli FV c" ;
+    brick:hasUnit qudt:DEG_C .
+
+polito:950 a brick:Active_Power_Sensor ;
+    rdfs:label "950] Trasporti S2C\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:951 a brick:Active_Power_Sensor ;
+    rdfs:label "951] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:952 a brick:Active_Power_Sensor ;
+    rdfs:label "952] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:953 a brick:Active_Power_Sensor ;
+    rdfs:label "953] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:954 a brick:Active_Power_Sensor ;
+    rdfs:label "954] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:955 a brick:Active_Power_Sensor ;
+    rdfs:label "955] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:956 a brick:Active_Power_Sensor ;
+    rdfs:label "956] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:957 a brick:Active_Power_Sensor ;
+    rdfs:label "957] Aula 16\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:958 a brick:Active_Power_Sensor ;
+    rdfs:label "958] Aula A1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:959 a brick:Active_Power_Sensor ;
+    rdfs:label "959] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:960 a brick:Active_Power_Sensor ;
+    rdfs:label "960] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:963 a brick:Active_Power_Sensor ;
+    rdfs:label "963] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:964 a brick:Active_Power_Sensor ;
+    rdfs:label "964] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:965 a brick:Active_Power_Sensor ;
+    rdfs:label "965] non utilizzato\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:966 a brick:Active_Power_Sensor ;
+    rdfs:label "966] Lab IEIT P5\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:967 a brick:Active_Power_Sensor ;
+    rdfs:label "967] Chimica Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:968 a brick:Reactive_Power_Sensor ;
+    rdfs:label "968] Chimica Reattiva\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:969 a brick:Active_Power_Sensor ;
+    rdfs:label "969] Geo Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:970 a brick:Reactive_Power_Sensor ;
+    rdfs:label "970] Geo Reattiva\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:971 a brick:Active_Power_Sensor ;
+    rdfs:label "971] SCW DELEN QUFF11 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:972 a brick:Active_Power_Sensor ;
+    rdfs:label "972] SCW DELEN QUFF11 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:973 a brick:Active_Power_Sensor ;
+    rdfs:label "973] SCW DELEN QUFF10 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:974 a brick:Active_Power_Sensor ;
+    rdfs:label "974] SCW DELEN QUFF10 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:975 a brick:Active_Power_Sensor ;
+    rdfs:label "975] MA QGP4 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:976 a brick:Active_Power_Sensor ;
+    rdfs:label "976] MA QGP4 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:977 a brick:Active_Power_Sensor ;
+    rdfs:label "977] SCE QUFF8 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:978 a brick:Active_Power_Sensor ;
+    rdfs:label "978] SCE QUFF8 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:979 a brick:Active_Power_Sensor ;
+    rdfs:label "979] SCE QUFF9 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:980 a brick:Active_Power_Sensor ;
+    rdfs:label "980] SCE QUFF9 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:981 a brick:Active_Power_Sensor ;
+    rdfs:label "981] SCE QUFF2 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:982 a brick:Active_Power_Sensor ;
+    rdfs:label "982] SCE QUFF2 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:983 a brick:Active_Power_Sensor ;
+    rdfs:label "983] SCE QUFF3 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:984 a brick:Active_Power_Sensor ;
+    rdfs:label "984] SCE QUFF3 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:985 a brick:Active_Power_Sensor ;
+    rdfs:label "985] MA QGP3 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:986 a brick:Active_Power_Sensor ;
+    rdfs:label "986] MA QGP3 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:987 a brick:Active_Power_Sensor ;
+    rdfs:label "987] SCW QLAB10 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:988 a brick:Active_Power_Sensor ;
+    rdfs:label "988] SCW QLAB10 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:989 a brick:Active_Power_Sensor ;
+    rdfs:label "989] SCW QLAB9 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:990 a brick:Active_Power_Sensor ;
+    rdfs:label "990] SCW QLAB9 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:991 a brick:Active_Power_Sensor ;
+    rdfs:label "991] SCW QLAB7 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:992 a brick:Active_Power_Sensor ;
+    rdfs:label "992] SCW QLAB7 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:995 a brick:Active_Power_Sensor ;
+    rdfs:label "995] SCE QLAB6 N" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:996 a brick:Active_Power_Sensor ;
+    rdfs:label "996] SCE QLAB6 P" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:999 a brick:Active_Power_Sensor ;
+    rdfs:label "999] E Cabina F TR2" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:9999 a brick:None ;
+    rdfs:label "9999] non in uso" ;
+    brick:hasUnit qudt:None .
+
+polito:Aule_R a brick:Building .
+
+polito:Cittadella a brick:Building .
+
+polito:DIATI a brick:Building .
+
+polito:EC a brick:Building .
+
+polito:1016 a brick:Active_Power_Sensor ;
+    rdfs:label "1016] CFOGR GF2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1023 a brick:Active_Power_Sensor ;
+    rdfs:label "1023] Cabina C Trafo 3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1024 a brick:Active_Power_Sensor ;
+    rdfs:label "1024] Cabina C Trafo 4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1037 a brick:Active_Power_Sensor ;
+    rdfs:label "1037] CFOGR GF1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1038 a brick:Active_Power_Sensor ;
+    rdfs:label "1038] CFOGR GF4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1039 a brick:Active_Power_Sensor ;
+    rdfs:label "1039] CFOGR GF3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1084 a brick:Active_Power_Sensor ;
+    rdfs:label "1084] Cabina C Trafo 5\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1125 a brick:Active_Power_Sensor ;
+    rdfs:label "1125] Cabina B Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1226 a brick:Active_Power_Sensor ;
+    rdfs:label "1226] Cabina C Attiva\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:125 a brick:Active_Power_Sensor ;
+    rdfs:label "125] Attiva Cabina B ex2" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1250 a brick:Active_Power_Sensor ;
+    rdfs:label "1250] CFOGR GF5 Daik\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1260 a brick:Active_Power_Sensor ;
+    rdfs:label "1260] Servizi Cabina C1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1264 a brick:Active_Power_Sensor ;
+    rdfs:label "1264] Gen Trafo 1\r" ;
+    brick:feeds polito:1268 ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1266 a brick:Active_Power_Sensor ;
+    rdfs:label "1266] Gen Trafo 2\r" ;
+    brick:feeds polito:1268 ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1267 a brick:Active_Power_Sensor ;
+    rdfs:label "1267] Scorta\r" ;
+    brick:feeds polito:1268 ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1285 a brick:Active_Power_Sensor ;
+    rdfs:label "1285] Rootop 1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1286 a brick:Active_Power_Sensor ;
+    rdfs:label "1286] Rootop 2\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1287 a brick:Active_Power_Sensor ;
+    rdfs:label "1287] Rootop 3\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1288 a brick:Active_Power_Sensor ;
+    rdfs:label "1288] Rootop 4\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:129 a brick:Active_Power_Sensor ;
+    rdfs:label "129] Attiva Cabina A\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1293 a brick:Active_Power_Sensor ;
+    rdfs:label "1293] Rootop 5\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:130 a brick:Reactive_Power_Sensor ;
+    rdfs:label "130] Reattiva Cabina A\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:226 a brick:Active_Power_Sensor ;
+    rdfs:label "226] Cabina C\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:227 a brick:Reactive_Power_Sensor ;
+    rdfs:label "227] Reattiva Cabina C\r" ;
+    brick:hasUnit qudt:KiloV-A_Reactive .
+
+polito:574 a brick:Active_Power_Sensor ;
+    rdfs:label "574] Attiva Cabina B\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:1268 a brick:Active_Power_Sensor ;
+    rdfs:label "1268] Cabina C1\r" ;
+    brick:hasUnit qudt:KiloW .
+
+polito:Aule_P a brick:Building .
+
+polito:I3P a brick:Building .
+

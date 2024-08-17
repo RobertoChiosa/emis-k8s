@@ -16,24 +16,25 @@ services:
     container_name: graphdb
     image: ontotext/graphdb:10.7.2
     restart: unless-stopped
+    ports:
+      - 7200:7200
+      - 7300:7300
     environment:
       GDB_JAVA_OPTS: >-
-        -Xmx${GRAPHDB_HEAP_SIZE} -Xms${GRAPHDB_HEAP_SIZE}
+        -Xmx4g -Xms4g
         -Dgraphdb.home=/opt/graphdb/home
         -Dgraphdb.workbench.importDirectory=/opt/graphdb/home/graphdb-import
+        -Dgraphdb.workbench.cors.enable=true
     volumes:
-      # Change folders in the .env file or directly here
-      - ${GRAPHDB_HOME}:/opt/graphdb/home
-      - ${IMPORT_FOLDER}:/opt/graphdb/home/graphdb-import
-      - ${REPOSITORY_CONFIG_FILE}:/opt/graphdb/graphdb-repo-config.ttl
+      - ./graphdb/graphdb-data:/opt/graphdb/home
   api: # API service
     container_name: api
     build: ./api/ # path to service's Dockerfile
     restart: unless-stopped
     ports:
       - 8000:8000
-    depends_on: # explicitly define dependency
-      - db
-      - graphdb
+#    depends_on: # explicitly define dependency
+#      - db
+#      - graphdb
 volumes:
   postgres-data:

@@ -14,7 +14,7 @@ license_info = {
 
 openapi_tags = [
     {
-        "name": "Metadata",
+        "name": "Monitoring",
         "description": "Sensors metadata.",
     },
     {

@@ -13,12 +13,11 @@
 
 import uvicorn
 from fastapi import FastAPI
-from starlette.middleware.cors import CORSMiddleware
-
 from src.api.db import models
 from src.api.db.database import engine
 from src.api.metadata import *
-from src.api.routers import report, metadata
+from src.api.routers import report, metadata, data
+from starlette.middleware.cors import CORSMiddleware
 
 # create the database tables
 models.Base.metadata.create_all(bind=engine)
@@ -45,6 +44,7 @@ app.add_middleware(
 
 app.include_router(report.router)
 app.include_router(metadata.router)
+app.include_router(data.router)
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8001)

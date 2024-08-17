@@ -1,7 +1,6 @@
 from fastapi import Depends, APIRouter
 from sqlalchemy.orm import Session
 
-from src.api.db import schemas
 from src.api.db.database import get_db
 
 router = APIRouter(
@@ -12,10 +11,10 @@ router = APIRouter(
 
 
 @router.get(
-    path="/meters/",
+    path="",
     summary="Get all meters",
-    tags=["Metadata"],
-    response_model=list[schemas.Meter]
+    tags=["Monitoring"],
+    # response_model=list[schemas.Meter]
 )
 def get_metadata_meters_all(db: Session = Depends(get_db)):
     """

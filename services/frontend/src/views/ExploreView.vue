@@ -1,16 +1,43 @@
+<script lang="ts">
+import {
+  CategoryScale,
+  Chart as ChartJS,
+  Legend,
+  LinearScale,
+  LineElement,
+  PointElement,
+  Title,
+  Tooltip
+} from 'chart.js'
+import { Line } from 'vue-chartjs'
+import * as chartConfig from './chartConfig.js'
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+)
+
+export default {
+  name: 'App',
+  components: {
+    Line
+  },
+  data() {
+    return chartConfig
+  }
+}
+</script>
+
+
 <template>
   <div class="about">
-    <div>
-      <h1>About</h1>
-      <p>
-        Welcome to the building operating system frontend. This is intended to be a dimostrative
-        frontend connected to the API to retrive and visualize data in a modern frontend.
-      </p>
-      <br />
-      <p>
-        It is built with Vue 3 and Vite, and it is intended to be a starting point for a modern
-        frontend project.
-      </p>
+    <div style="width: 100%; height: 400px">
+      <Line :data="data" :options="options" />
     </div>
   </div>
 </template>

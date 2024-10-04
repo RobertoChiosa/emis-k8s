@@ -1,16 +1,16 @@
 version: '3.8'
 services:
-  db: # database service
+  db:
     container_name: db
-    image: timescale/timescaledb-ha:pg16 # use official postgres image
+    image: timescale/timescaledb-ha:pg16 # use official timescal postgres image
     restart: unless-stopped
-    environment: # define environment variables
+    environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
-    volumes: # mount local directory to container
+    volumes:
       - ./postgres:/docker-entrypoint-initdb.d
-    ports: # expose ports
+    ports:
       - 5432:5432
   graphdb:
     container_name: graphdb
@@ -27,10 +27,14 @@ services:
         -Dgraphdb.workbench.cors.enable=true
     volumes:
       - ./graphdb/graphdb-data:/opt/graphdb/home
-  api: # API service
+  api:
     container_name: api
     build: ./api/ # path to service's Dockerfile
     restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - 8000:8000
   #    depends_on: # explicitly define dependency

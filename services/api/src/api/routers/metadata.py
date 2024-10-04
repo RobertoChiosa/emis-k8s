@@ -3,7 +3,6 @@
 #  Last edited: 4/10/2024
 
 import json
-import os
 
 import requests
 from fastapi import APIRouter, HTTPException, Query
@@ -41,20 +40,11 @@ def get_sparql_query(
 
     """
 
-    res_login = requests.post(
-        f"{os.getenv('GRAPHDB_HOST')}/rest/login/{os.getenv('GRAPHDB_USER')}",
-        headers={"X-GraphDB-Password": os.getenv("GRAPHDB_PSW")},
-    )
-    if res_login.status_code != 200:
-        raise HTTPException(status_code=500, detail="GraphDB login failed")
-
-    token = res_login.headers["Authorization"]
-
     # load graph to graphdb
     # clear all on repository
     res = requests.get(
-        f"{os.getenv('GRAPHDB_HOST')}/repositories/{os.getenv('GRAPHDB_REPO')}",
-        headers={"Authorization": token, "Accept": "application/sparql-results+json"},
+        f"http://localhost:7200/repositories/bos",
+        headers={"Accept": "application/sparql-results+json"},
         params={"query": query},
     )
     if res.status_code != 200:

@@ -1,15 +1,6 @@
-# Author:       Roberto Chiosa
-# Copyright:    Roberto Chiosa, © 2023
-# Email:        roberto.chiosa@polito.it
-#
-# Created:      27/07/23
-# Script Name:  main.py
-# Path:
-#
-# Script Description:
-#
-#
-# Notes:
+#  Copyright © Roberto Chiosa 2024.
+#  Email: roberto.chiosa@polito.it
+#  Last edited: 4/10/2024
 
 # Third party imports
 import uvicorn

@@ -1,17 +1,6 @@
-"""
-Author:       Roberto Chiosa
-Copyright:    Roberto Chiosa, © 2024
-Email:        roberto.chiosa@pinvision.it
-
-Created:      04/06/24
-Script Name:  report.py
-Path:         src/api/routers
-
-Script Description:
-
-
-Notes:
-"""
+#  Copyright © Roberto Chiosa 2024.
+#  Email: roberto.chiosa@polito.it
+#  Last edited: 4/10/2024
 
 # Standard library imports
 import io
@@ -21,7 +10,7 @@ from fastapi import APIRouter, Request, Response
 from fastapi.templating import Jinja2Templates
 
 # Project imports
-from src.api.utils_report import (
+from src.api.utils.utils_report import (
     generate_test_report_html,
     generate_test_report_pdf,
     generate_test_report_word,
@@ -40,7 +29,6 @@ router = APIRouter(
 def test_report_pdf():
     """
     Generate a test PDF report
-    :return:
     """
     out = generate_test_report_pdf().output("output_file.pdf", "S").encode("latin-1")
     headers = {

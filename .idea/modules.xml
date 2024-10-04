@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/services/api/api.iml" filepath="$PROJECT_DIR$/services/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/building-operating-system.iml" filepath="$PROJECT_DIR$/.idea/building-operating-system.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/bos-deployment/services/docs/docs.iml" filepath="$USER_HOME$/Desktop/bos-deployment/services/docs/docs.iml" />
+    </modules>
+  </component>
+</project>

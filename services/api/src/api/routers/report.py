@@ -12,13 +12,20 @@ Script Description:
 
 Notes:
 """
+
+# Standard library imports
 import io
 
-from fastapi import APIRouter, Request
-from fastapi import Response
+# Third party imports
+from fastapi import APIRouter, Request, Response
 from fastapi.templating import Jinja2Templates
 
-from src.api.utils_report import generate_test_report_pdf, generate_test_report_word, generate_test_report_html
+# Project imports
+from src.api.utils_report import (
+    generate_test_report_html,
+    generate_test_report_pdf,
+    generate_test_report_word,
+)
 
 templates = Jinja2Templates(directory="templates")
 
@@ -35,12 +42,12 @@ def test_report_pdf():
     Generate a test PDF report
     :return:
     """
-    out = generate_test_report_pdf().output("output_file.pdf", 'S').encode('latin-1')
+    out = generate_test_report_pdf().output("output_file.pdf", "S").encode("latin-1")
     headers = {
-        'Content-Disposition': 'inline; filename="output_file.pdf"',
-        'Content-Encoding': 'UTF-8'
+        "Content-Disposition": 'inline; filename="output_file.pdf"',
+        "Content-Encoding": "UTF-8",
     }
-    return Response(bytes(out), headers=headers, media_type='application/pdf')
+    return Response(bytes(out), headers=headers, media_type="application/pdf")
 
 
 @router.get("/test/html")
@@ -66,8 +73,11 @@ async def test_report_word():
     buffer.seek(0)  # rewind the stream
 
     headers = {
-        'Content-Disposition': 'inline; filename="output_file.pdf"',
-        'Content-Encoding': 'UTF-8'
+        "Content-Disposition": 'inline; filename="output_file.pdf"',
+        "Content-Encoding": "UTF-8",
     }
-    return Response(buffer.encode("utf-8"), headers=headers,
-                    media_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')
+    return Response(
+        buffer.encode("utf-8"),
+        headers=headers,
+        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    )

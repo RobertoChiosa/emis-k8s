@@ -11,13 +11,16 @@
 #
 # Notes:
 
+# Third party imports
 import uvicorn
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
+
+# Project imports
 from src.api.db import models
 from src.api.db.database import engine
 from src.api.metadata import *
-from src.api.routers import report, metadata, data
-from starlette.middleware.cors import CORSMiddleware
+from src.api.routers import data, metadata, report
 
 # create the database tables
 models.Base.metadata.create_all(bind=engine)
@@ -30,7 +33,7 @@ app = FastAPI(
     terms_of_service=terms_of_service,
     contact=contact,
     license_info=license_info,
-    openapi_tags=openapi_tags
+    openapi_tags=openapi_tags,
 )
 
 # Allow CORS for all origins

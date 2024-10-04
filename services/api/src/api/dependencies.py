@@ -13,6 +13,7 @@ Script Description:
 Notes:
 """
 
+# Third party imports
 from dotenv import load_dotenv
 
 # load secrets

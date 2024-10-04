@@ -1,6 +1,8 @@
+# Third party imports
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.schema import PrimaryKeyConstraint
 
+# Project imports
 from src.api.db.database import Base
 
 
@@ -12,6 +14,4 @@ class Data(Base):
     uuid = Column(String)
 
     # primary key composite
-    __table_args__ = (
-        PrimaryKeyConstraint('time', 'value'),
-    )
+    __table_args__ = (PrimaryKeyConstraint("time", "value"),)

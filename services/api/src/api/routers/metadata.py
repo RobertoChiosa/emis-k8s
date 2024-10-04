@@ -1,6 +1,8 @@
-from fastapi import Depends, APIRouter
+# Third party imports
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
+# Project imports
 from src.api.db.database import get_db
 
 router = APIRouter(

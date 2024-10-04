@@ -2,10 +2,9 @@
 
 A full stack open source Energy Management and Information system built with python and Kubernetes
 
-local test with dockercompose
-local test with kubernetes
-ready to go online
+- [Services](./services/README.md)
+- [Helm Charts](./bos/README.md)
 
-# Relate darticles medium
+### References
 
-popiulate db postgres
+- ...

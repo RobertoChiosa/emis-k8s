@@ -1,7 +1,7 @@
 # Services
 
-* [API](./api/README.md) - API service
-* postgres - Postgres database
+This folder contains the services that are used in the project. Each service is a separate module that can be run
+independently. Refer to the developer documentation for further details on each service.
 
-create db postgres
-https://medium.com/@asuarezaceves/initializing-a-postgresql-database-with-a-dataset-using-docker-compose-a-step-by-step-guide-3feebd5b1545
+---
+[&larr; Go Back](../README.md)

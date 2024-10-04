@@ -1,12 +1,16 @@
+#  Copyright © Roberto Chiosa 2024.
+#  Email: roberto.chiosa@polito.it
+#  Last edited: 4/10/2024
+
 # Standard library imports
 from datetime import datetime
 
 # Third party imports
 import numpy as np
+from PIL import Image
 from docx import Document
 from fpdf import FPDF
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
-from PIL import Image
 
 
 def generate_test_report_pdf() -> FPDF:
@@ -22,7 +26,7 @@ def generate_test_report_pdf() -> FPDF:
         :return: FPDF object
         """
         # Set up the title on the left
-        document.set_font("helvetica", "B", 15)
+        document.set_font("helvetica", "B", 20)
         document.cell(40, 10, document.title)
         # Set up the image on the right
         # document.image('../img/logo.png', 170, 6, 22)
@@ -149,17 +153,22 @@ def generate_test_report_pdf() -> FPDF:
     pdf.add_page()
     pdf = header(pdf)
     pdf = add_heading(pdf, 1, "Section")
-    pdf = add_paragraph(pdf, """Section""")
+    pdf = add_paragraph(pdf,
+                        """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""")
 
     # document.add_picture('../images/fc1_definition.png')
-    pdf = add_heading(pdf, "Dataset Plot")
-    pdf = add_heading(pdf, "Dataset Statistics")
-    pdf = add_run(pdf, ["- This outputs correctly", "- This outputs correctly"])
-    pdf = add_heading(
-        pdf, "Summary Statistics filtered for when the AHU is running", level=2
-    )
-    pdf = add_heading(pdf, "Suggestions based on data analysis", level=2)
-    pdf = add_heading(pdf, "Fault definition", level=2)
+    # pdf = add_heading(pdf, "Dataset Plot")
+    # pdf = add_heading(pdf, "Dataset Statistics")
+    # pdf = add_run(pdf, ["- This outputs correctly", "- This outputs correctly"])
+    # pdf = add_heading(
+    #     pdf, "Summary Statistics filtered for when the AHU is running", level=2
+    # )
+    # pdf = add_heading(pdf, "Suggestions based on data analysis", level=2)
+    # pdf = add_heading(pdf, "Fault definition", level=2)
     pdf = footer(pdf)
     # document.add_table_guideline((
     #     ("Equation", "DSP < DSPSP - &DSP AND VFDSPD >= 99 % - eVFDSPD"),

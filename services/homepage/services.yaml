@@ -1,0 +1,32 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+
+- Frontend:
+    - Grafana:
+        icon: grafana.svg
+        href: http://localhost/3030
+        description: Grafana dashboard for visualization
+    - Django Admin:
+        icon: python.svg
+        href: http://localhost/8000
+        description: Django frontend for admins
+
+- Database:
+    - Postgres:
+        icon: postgres.svg
+        href: http://localhost/
+        description: Postgres database
+    - Influx:
+        icon: influxdb.svg
+        href: http://localhost/
+        description: Timeseries database
+    - GraphDB:
+        icon: https://www.ontotext.com/wp-content/uploads/2022/09/Logo-GraphDB.svg
+        href: http://localhost/
+        description: Graphs database
+
+- Utilities:
+    - VPN:
+        href: http://localhost/
+        description: Homepage is 😎

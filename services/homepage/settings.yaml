@@ -2,7 +2,7 @@
 # For configuration options and examples, please see:
 # https://gethomepage.dev/latest/configs/settings
 
-title: Raspberry Pi Dashboard
+title: Raspberry Roberto 
 theme: dark # <----- add this line
 color: slate # <----- add this line
 background:
@@ -12,7 +12,7 @@ background:
   brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
   opacity: 50 # 0-100
 
-  # ^^^^  add the above block
+# ^^^^  add the above block
   providers:
     openweathermap: openweathermapapikey
     weatherapi: weatherapiapikey

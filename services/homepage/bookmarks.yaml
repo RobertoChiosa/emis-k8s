@@ -1,0 +1,11 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+
+- Developer:
+    - Github:
+        - abbr: GH
+          href: https://github.com/
+    - Homepage:
+        - abbr: HP
+          href: https://technotim.live/posts/homepage-dashboard/

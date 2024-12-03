@@ -19,16 +19,16 @@ setup: 		## Create env file
 build: 		## Build docker-compose
 	@echo "Running docker-compose"
 	cd services && \
-	docker-compose build
+	docker compose build
 
-.PHONY: run
-run: 		## Run docker-compose
-	@echo "Running docker-compose"
+.PHONY: up
+up: 		## Run docker compose up
+	@echo "Running docker compose"
 	cd services && \
-	docker-compose up -d
+	docker compose up -d
 
 .PHONY: stop
-stop: 		## Stop docker-compose
-	@echo "Stopping docker-compose"
+down: 		## Stop docker-compose
+	@echo "Stopping docker compose down"
 	cd services && \
-	docker-compose down
+	docker compose down
